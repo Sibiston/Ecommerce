@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>Login</title>
+<link rel="stylesheet" href="loginstyle.css">
+
+</head>
+<body>
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1>BLUE STORE</h1>
+		<p class="moto">Shopping now more than you want</p>
+		<span>
+			<p>login with social media</p>
+			<a href="https://www.facebook.com"><i class="facebook" >Login with Facbook</i></a>
+			<a href="https://www.twitter.com"><i class="twitter" >Login with Twitter</i></a>
+		</span>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Login</h5>
+		<p>Don't have an account? <a href="register.html">Create Your Account</a> it takes less than a minute</p>
+		<div class="inputs"><form name="f" onsubmit="return validate()" action="home.html" method="POST">
+			<input name="name"id="username" type="text"  placeholder="user name">
+			<br>
+			<input name="pass" id="password" type="password"  placeholder="password">
+		</div>
+			
+			<br><br>
+			
+		<div class="remember-me--forget-password">
+	<label>
+		<input type="checkbox" name="item" checked/>
+		<span class="text-checkbox">Remember me</span>
+	</label>
+			<a href="contact.html"><p style="color:blue">forget password?</p></a>
+		</div>
+			
+			<br>
+
+			 <button id="login" onclick="login()" type="submit" >Login</button></form>
+			 
+			
+			<script>
+		function validate()
+		{   var name=document.f.name.value;
+		    var password=document.f.pass.value;
+		 if(name==null || name=="")
+			
+			{
+				alert("Name can't be blank");
+		   		  return false;
+			}
+		if(password.length<6)
+			{
+			alert("password must be atleast 6 digits");
+				return false;
+			 }	
+}
+	</script>
+	
+	</div>
+	
+</div>
+  
+</body>
+</html>
